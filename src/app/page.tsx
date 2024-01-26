@@ -16,7 +16,7 @@ function sleep(ms: number): Promise<void> {
 }
 
 // @ts-ignore
-export function classNames(...classes) {
+function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -109,7 +109,7 @@ export default function Home() {
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-8 lg:max-w-4xl">
           {isLoading ? (
-            <dl className="my-32 grid max-w-xl grid-cols-4 gap-y-10 lg:max-w-none lg:gap-y-16 lg:mt-6">
+            <dl className="my-32 grid max-w-xl grid-cols-4 gap-y-10 lg:max-w-none lg:gap-y-16 lg:my-6">
               <div className="relative col-span-2">
                 <dd className="mt-3 leading-7 text-gray-200 text-lg font-semibold text-center">
                   <LoadingDump />
@@ -154,7 +154,7 @@ export default function Home() {
               if (!isLoading) {
                 console.log("runs");
                 setIsLoading(true);
-                await sleep(5000);
+                await sleep(4000);
                 const option = getRandomOption(options);
                 setCurrent(option);
                 setIsLoading(false);

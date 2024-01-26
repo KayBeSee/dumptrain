@@ -17,7 +17,7 @@ function sleep(ms: number): Promise<void> {
 
 const Loading = () => (
   <div className="animate-pulse flex flex-1">
-    <div className="rounded-full bg-slate-500 h-9 w-full"></div>
+    <div className="rounded-full bg-slate-500 h-7 w-full"></div>
   </div>
 );
 
@@ -59,7 +59,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <div className="py-24 bg-gradient-to-br from-[#0F1822] from-0% via-[#31414F] via-80% to-[#EDBF5A] to-100% sm:py-32 h-screen flex items-center">
+    <div className="bg-gradient-to-br from-[#0F1822] from-0% via-[#31414F] via-80% to-[#EDBF5A] to-100% sm:py-32 h-screen flex items-center">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-[#9DC656]">
